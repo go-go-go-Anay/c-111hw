@@ -1,0 +1,99 @@
+<html>
+
+<head>
+
+<title>Hand Gesture Identification Webapp</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<center>
+
+<div id="head">
+
+<h1>Hand Gesture Identification
+
+    <br>
+
+    <div id="icons">
+
+    <span>&#128076</span>
+
+    <span>&#128077</span>
+
+    <span>&#9996</span>
+
+</div>
+
+<br>
+
+</h1>
+
+</div>
+
+<div id="instructions">
+
+<h3>Take selfie of gesture to know its meaning</h3>
+
+<h4>|pick 1 gesture from below options|</h4>
+
+<h2>
+    <span>&#128077</span>  |
+
+    <span>&#9996</span> |
+
+    <span>&#128076</span> 
+
+</h2>
+
+</div>
+<br>
+<br>
+<br>
+</center>
+
+<center>
+<div class="col-md-4 col-sm-12 col-xs-12">
+      
+          
+    <label>Webcam View - </label>
+    <div id="camera"></div>
+    <br>
+    <br>
+    <button class="btn btn-warning" onclick="takesnapshot()">Capture Image</button>
+</div>
+
+<div id="prediction_1" class="col-md-4 col-sm-12 col-xs-12">
+  <h4 id="p1">PREDICTION - </h4>
+  <p class="emotion_name" id="result_emotion_name"></p>
+  <p class="emogi" id="update_emogi"></p>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+
+  <label>Snapshot View - </label>
+  <div id="result"></div>
+  <br>
+  <br>
+  <button onclick="check()" class="btn btn-success">Predict Emotion</button>
+</div>
+
+</center>
+
+</body>
+
+</html>

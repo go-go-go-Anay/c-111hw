@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(177, 0, 177);
+}
+
+#head{
+
+    background-color:indigo;
+
+    width: 500px;
+
+    height: 100px;
+
+    border-radius: 15px;
+}
+
+h1{
+
+    color: whitesmoke;
+
+    font-family:cursive;
+
+    font-weight: bold;
+
+}
+ 
+#icons{
+    background-color: darkorchid;
+
+    width: 200px;
+
+    border-radius: 15px;
+
+    padding-bottom: 4px;
+}
+
+#instructions{
+    color: white;
+}
+
+#prediction_1{
+    background-color:mediumseagreen;
+    width: 155px;
+    border-radius:10px;
+ 
+  }
+
+  #camera , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+
